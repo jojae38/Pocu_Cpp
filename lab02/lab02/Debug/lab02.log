@@ -1,0 +1,3 @@
+﻿  lab02.cpp
+C:\Users\jojae\Desktop\Github\Popu_Cpp\lab02\lab02\lab02.cpp(54,29): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  lab02.vcxproj -> C:\Users\jojae\Desktop\Github\Popu_Cpp\lab02\Debug\lab02.exe
