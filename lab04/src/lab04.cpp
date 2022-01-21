@@ -50,4 +50,6 @@ get(firstName,150,'#')
 getline(firstName,100);
 getline(firstName,100,'#');
 
+  //더 추가해보고 실습도 필요함
+  
 }
