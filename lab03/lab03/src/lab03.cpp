@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-	cout << "<ÀÔ·Â>" << endl;
+	cout << "<ì…ë ¥>" << endl;
 	int hours;
-	/*ÀÔ·ÂÀ» ¹Ş´Â ¹æ½Ä - ÀÔ·Â ¿¬»êÀÚ*/
+	/*ì…ë ¥ì„ ë°›ëŠ” ë°©ì‹ - ì…ë ¥ ì—°ì‚°ì*/
 	cin >> hours;
 	cout << "Today I studied for " << hours <<"hours"<< endl;
 }
