@@ -1,4 +1,4 @@
-//#pragma once´Â Çì´õ¸¦ ÇÑ¹ø¸¸ include ÇÏ±â À§ÇØ »ç¿ëÇÏ´Â ¸í·É¾î
+//#pragma onceëŠ” í—¤ë”ë¥¼ í•œë²ˆë§Œ include í•˜ê¸° ìœ„í•´ ì‚¬ìš©í•˜ëŠ” ëª…ë ¹ì–´
 #pragma once
 #include <iostream>
 namespace Ver1
