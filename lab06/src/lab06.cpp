@@ -29,15 +29,16 @@ int main()
     vec_b.X = 2;
     vec_a.X = 1;
     vec_res.X = 0;
-    //vec_res.X=NULL;
+    
 
-    check=TryDivide_ver0(vec_res, vec_a, vec_b);
+    check = TryDivide_ver0(vec_res, vec_a, vec_b);
     cout << check.X << endl;
-    check=TryDivide_ver1(vec_res, vec_a, vec_b);
+    check = TryDivide_ver1(vec_res, vec_a, vec_b);
     cout << check.X << endl;
-    check=TryDivide_ver2(vec_res, vec_a, vec_b);
+    check = TryDivide_ver2(vec_res, vec_a, vec_b);
     cout << check.X << endl;
-    check=TryDivide_finalver(&vec_res, vec_a, vec_b);
+    //vec_res.X = NULL;//주석을 풀어볼 시 Assertion error발생
+    check = TryDivide_finalver(&vec_res, vec_a, vec_b);
     cout << check.X << endl;
     return 0;
 }
@@ -57,13 +58,13 @@ Vector TryDivide_ver1(Vector& result, Vector& a, Vector& b)
 Vector TryDivide_ver2(Vector& result, const Vector& a, const Vector& b)
 {
     result.X = a.X + b.X;
-   //cout << result.X << " " << a.X << " " << b.X << endl;
+    //cout << result.X << " " << a.X << " " << b.X << endl;
     return result;
 }
 Vector TryDivide_finalver(Vector* result, const Vector& a, const Vector& b)
 {
-    assert(result != NULL);//result가 NULL인지 확인한다.
+    assert(result->X != NULL);//result가 NULL인지 확인한다. 안에 조건이 에러일 시 Assertion Error가 발생한다.
     result->X = a.X + b.X;
-   //cout << result->X << " " << a.X << " " << b.X << endl;
+    //cout << result->X << " " << a.X << " " << b.X << endl;
     return *result;
 }
